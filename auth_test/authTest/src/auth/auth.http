@@ -1,0 +1,54 @@
+### 회원가입
+POST http://localhost:3000/auth/register
+Content-Type: application/json
+
+{
+    "email":"hw020123@gmail.com",
+    "password":"1234",
+    "username":"andy"
+}
+
+
+### 로그인
+POST http://localhost:3000/auth/login
+Content-Type: application/json
+
+{
+    "email":"hw020123@mail.com",
+    "password":"123445"
+}
+
+
+### 로그인2 - 쿠키
+POST http://localhost:3000/auth/login2
+Content-Type: application/json
+
+{
+    "email":"a@mail.com",
+    "password":"123445"
+}
+
+
+### Guard 테스트
+GET http://localhost:3000/auth/test-guard
+
+
+### 로그인 3: 세션 사용 테스트
+POST http://localhost:3000/auth/login3
+Content-Type: application/json
+
+{
+    "email" : "andy1@podo.com",
+    "password":"1234"
+}
+
+// 로그인 3: 틀린 패스워드로 테스트
+POST http://localhost:3000/auth/login3
+{
+    "email" : "andy1@podo.com",
+    "password":"4321"
+}
+
+### 인증 성공/실패 테스트
+GET http://localhost:3000/auth/test-guard2
+

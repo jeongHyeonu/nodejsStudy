@@ -1,0 +1,10 @@
+POST http://localhost:3000/file-upload
+# boundary는 각 매개변수를 구분지어주는 구분자 역할 (ASCII만 허용, 70자 넘으면 X)
+Content-Type: multipart/form-data; boundary=test-file-upload 
+
+--test-file-upload
+Content-Disposition: form-data; name="file"; filename="test.png"
+Content-Type: image/png
+
+< test.png
+--test-file-upload--
