@@ -147,3 +147,13 @@ multer 패키지 (파일 업로드에 사용되는 nodejs 라이브러리) 사�
 # project 4. 웹소켓 실시간 채팅
 
 websockets 라이브러리 이용한 실시간 채팅
+
+# project 5. Game userinfo api
+
+유니티 게임 서버 api 구현
+
+<p align="center">
+ <img src = "./images/7.png">
+</p>
+
+post / get 요청이 잘 되는 걸 확인할 수 있다
